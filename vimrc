@@ -17,3 +17,8 @@ set bg=dark
 " identation character
 let g:indentLine_char = '|'
 
+" Map ctrl + ; to comment selected lines in visual mode
+vnoremap <C-b> :s/^/\/\/<CR>:nohl<CR>
+" IT COMMENTS WITH -> //
+" Map ctrl + : to uncomment selected lines in visual mode
+vnoremap <C-S-U> :s/\/\/<CR>:nohl<CR>
